@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("./MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-500.eot");
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"), url("./MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("./MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("./MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+.background .container header .header__contacts .header__adress, .background .container header .header__contacts .header__phones-and-email a {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF; }
+
+.background .container .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px; }
+
+.background .container .text-information .text-information__main .text-information__consultation .text-information__white-little-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF; }
+
+.background .container .text-information .text-information__sidebar, .background .container .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #CCCCCC; }
+
+.background .container .text-information .text-information__main .text-information__consultation .text-information__white-regular-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Museo Sans Cyrl', sans-serif; }
+
+.container {
+  max-width: 1180px;
+  margin: auto; }
+
+.background {
+  background-image: url(./img/main-background.png);
+  background-repeat: repeat; }
+  .background .container header {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 40px 0 80px 0;
+    position: relative;
+    width: 50%;
+    grid-gap: 10%; }
+    .background .container header .header__logo {
+      position: absolute;
+      right: 110%;
+      cursor: pointer;
+      width: 136px; }
+    .background .container header .header__contacts {
+      display: flex;
+      flex-direction: row-reverse;
+      column-gap: 20%;
+      justify-content: space-between; }
+      .background .container header .header__contacts .header__phones-and-email {
+        display: grid;
+        row-gap: 5px; }
+        .background .container header .header__contacts .header__phones-and-email a {
+          text-decoration: none; }
+    .background .container header .header__social-blocks {
+      display: flex;
+      column-gap: 4px;
+      justify-self: center; }
+      .background .container header .header__social-blocks .header__social-block {
+        background: rgba(0, 0, 0, 0.4);
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  .background .container .text-information {
+    width: 50%;
+    position: relative; }
+    .background .container .text-information .text-information__sidebar {
+      width: 136px;
+      position: absolute;
+      right: 110%;
+      font-weight: 700; }
+      .background .container .text-information .text-information__sidebar .sidebar {
+        list-style-type: none; }
+        .background .container .text-information .text-information__sidebar .sidebar .sidebar__item {
+          cursor: pointer;
+          position: relative; }
+        .background .container .text-information .text-information__sidebar .sidebar .sidebar__item::after {
+          position: absolute;
+          content: '';
+          width: 30px;
+          height: 1px;
+          background-color: #CCCCCC;
+          left: -60px;
+          top: 11px; }
+        .background .container .text-information .text-information__sidebar .sidebar .sidebar__item:hover {
+          color: #F2BF14; }
+        .background .container .text-information .text-information__sidebar .sidebar .sidebar__item:hover > .sidebar__item::after {
+          background-color: #F2BF14; }
+    .background .container .text-information .text-information__main .text-information__concrete-definition {
+      border-bottom: rgba(255, 255, 255, 0.21) 1px solid;
+      width: 90%;
+      padding-bottom: 20px;
+      display: grid;
+      row-gap: 10px; }
+      .background .container .text-information .text-information__main .text-information__concrete-definition .text-information__yellow-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F2BF14; }
+      .background .container .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title {
+        color: #FFFFFF; }
+    .background .container .text-information .text-information__main .text-information__consultation {
+      padding-top: 25px;
+      display: grid;
+      row-gap: 15px; }
+      .background .container .text-information .text-information__main .text-information__consultation .text-information__consultation-button {
+        display: flex;
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #333333;
+        padding: 12px 20px;
+        background-color: #F2BF14; }
