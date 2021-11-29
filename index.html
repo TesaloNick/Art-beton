@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Арт-бетон</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
+  <script src="/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+  <script defer src="./scripts.js"></script>
 </head>
 <body>
   <div class="background">
@@ -28,22 +33,22 @@
         </div>
         <div class="header__social-blocks">
           <div class="header__social-block">
-            <img src="./img/whatsapp-img.svg" alt="whatsapp-img" class="social__whatsapp-img">
+            <img src="./img/social/whatsapp-img.svg" alt="whatsapp-img" class="social__whatsapp-img">
           </div>
           <div class="header__social-block">
-            <img src="./img/viber-img.svg" alt="viber-img" class="social__viber-img">
+            <img src="./img/social/viber-img.svg" alt="viber-img" class="social__viber-img">
           </div>
           <div class="header__social-block">
-            <img src="./img/telegram-img.svg" alt="telegram-img" class="social__telegram-img">
+            <img src="./img/social/telegram-img.svg" alt="telegram-img" class="social__telegram-img">
           </div>
         </div>
       </header>
       <div class="text-information">
         <div class="text-information__sidebar">
           <ul class="sidebar">
-            <li class="sidebar__item">Наши работы</li>
-            <li class="sidebar__item">Цены</li>
-            <li class="sidebar__item">Карта проезда</li>
+            <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p>Наши работы</p></li>
+            <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p></p>Цены</p></p></li>
+            <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p></p>Карта проезда</p></p></li>
           </ul>
         </div>
         <div class="text-information__main">
@@ -58,6 +63,133 @@
             <p class="text-information__white-regular-text">Предлагаем Вам лучшие решения для экстерьера<br> Вашего дома и участка.</p>
             <div class="text-information__consultation-button">Получить консультацию</div>
           </div>
+        </div>
+      </div>
+      <div class="slider-block">
+        <div class="slider-block__slider">
+          <div class="slider-block__slide">
+            <img src="./img/slider/slide1.png" alt="slide1" class="slider-block__slide-img">
+            <img src="./img/slider/background-slider.svg" alt="background-slider" class="slider-block__background-img">
+            <div class="slider-block__information">
+              <p class="slider-block__work">Выполненные работы</p>
+              <p class="slider-block__name">Вазон круглый</p>
+              <p class="slider-block__price">40/30 — 75р</p>
+            </div>
+          </div>
+          <div class="slider-block__slide">
+            <img src="./img/slider/slide1.png" alt="slide1" class="slider-block__slide-img">
+            <img src="./img/slider/background-slider.svg" alt="background-slider" class="slider-block__background-img">
+            <div class="slider-block__information">
+              <p class="slider-block__work">Выполненные работы</p>
+              <p class="slider-block__name">Не Вазон круглый</p>
+              <p class="slider-block__price">10р</p>
+            </div>
+          </div>
+          <div class="slider-block__slide">
+            <img src="./img/slider/slide1.png" alt="slide1" class="slider-block__slide-img">
+            <img src="./img/slider/background-slider.svg" alt="background-slider" class="slider-block__background-img">
+            <div class="slider-block__information">
+              <p class="slider-block__work">Выполненные работы</p>
+              <p class="slider-block__name">Да, Вазон круглый</p>
+              <p class="slider-block__price">44р</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="benefits">
+        <div class="benefits__benefit">
+          <img src="./img/benefits/benefit1.svg" alt="benefit1" class="benefits__benefit-img">
+          <p class="benefits__benefit-text">Долговечны и обраладют высокой износоустойчивостью</p>
+        </div>
+        <div class="benefits__benefit">
+          <img src="./img/benefits/benefit2.svg" alt="benefit2" class="benefits__benefit-img">
+          <p class="benefits__benefit-text">Не требуют ухода на всем сроке эксплуатации</p>
+        </div>
+        <div class="benefits__benefit">
+          <img src="./img/benefits/benefit3.svg" alt="benefit3" class="benefits__benefit-img">
+          <p class="benefits__benefit-text">Не боиться прямых солнечных лучей и не выветривается</p>
+        </div>
+        <div class="benefits__call">Перезвоните мне</div>
+      </div>
+    </div>
+    <div class="prices container">
+      <p class="prices__title">Цены на изделия</p>
+      <p class="prices__action-text">Мы производим следующие изделия по технологии «Мытый бетон»</p>
+      <ul class="prices__products">
+        <li class="prices__product">Заборный камень</li>
+        <li class="prices__product">Плитка для придомовой территории</li>
+        <li class="prices__product">Плитка для отделки фасада и фундамента</li>
+        <li class="prices__product">Уличные вазоны для растений</li>
+        <li class="prices__product">Урны</li>
+      </ul>
+      <div class="prices__blocks slider-of-prices">
+        <div class="slider-of-prices__products">
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <p class="slider-of-prices__product-title">Блок столбовой</p>
+              <p class="slider-of-prices__product-date">30/30/20</p>
+              <p class="slider-of-prices__product-price">до 100 шт — 12 р.</p>
+              <p class="slider-of-prices__product-price">от 100 шт — 11р.</p>
+              <p class="slider-of-prices__product-price">от 300 шт — 10р.</p>
+            </div>
+          </div>
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <p class="slider-of-prices__product-title">Блок рядный</p>
+              <p class="slider-of-prices__product-date">40/20/20</p>
+              <p class="slider-of-prices__product-price">до 100 шт — 12 р.</p>
+              <p class="slider-of-prices__product-price">от 100 шт — 11р.</p>
+              <p class="slider-of-prices__product-price">от 300 шт — 10р.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-of-prices__products">
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Крышка столбовая</div>
+              <div class="slider-of-prices__product-price">45/45 — 10р</div>
+            </div>
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Крышка рядная</div>
+              <div class="slider-of-prices__product-price">30/50 — 8р</div>
+            </div>
+          </div>
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Плитка тротуарная</div>
+              <div class="slider-of-prices__product-price">40/40/4,5 — 40р/м<span>2</span></div>
+            </div>
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Плитка фасадная</div>
+              <div class="slider-of-prices__product-price">40/20/2,5 — 35р/м<span>2</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-of-prices__products">
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Вазон круглый</div>
+              <div class="slider-of-prices__product-price">40/30 — 75р</div>
+            </div>
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Вазон шарообразный</div>
+              <div class="slider-of-prices__product-price">60/60 — 130р</div>
+            </div>
+          </div>
+          <div class="slider-of-prices__products-block">
+            <div class="slider-of-prices__product">
+              <div class="slider-of-prices__product-title">Урна</div>
+              <div class="slider-of-prices__product-price">30/25 — 40р</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-of-prices__yelllow-block">
+          <ul class="slider-of-prices__yelllow-block-list">
+            <li class="slider-of-prices__yelllow-block-item">Марка цемента применяется М400 и больше;</li>
+            <li class="slider-of-prices__yelllow-block-item">В Качестве цветного фрационного наполнителя используется натуральный каменный материал с размером зерна от 5 до 20 мм;</li>
+            <li class="slider-of-prices__yelllow-block-item">Применение бетона, изготовленного по данной технологии, разнообразно.</li>
+          </ul>
         </div>
       </div>
     </div>
