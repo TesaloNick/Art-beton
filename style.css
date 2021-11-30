@@ -17,8 +17,8 @@
   font-weight: 700;
   font-style: normal; }
 .background .container header .header__logo, .background .container .text-information .text-information__sidebar, .background .container .benefits .benefits__call {
-  right: 116%;
-  width: 136px; }
+  left: 60px;
+  width: 180px; }
 
 .background .container header .header__contacts .header__adress, .background .container header .header__contacts .header__phones-and-email a {
   display: block;
@@ -28,18 +28,18 @@
   line-height: 18px;
   color: #FFFFFF; }
 
-.background .container .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title, .background .prices .prices__title {
+.background .container .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title, .background .prices .prices__title, .background .footer .container .contacts .contacts__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px; }
 
-.background .container .text-information .text-information__main .text-information__consultation .text-information__white-little-title, .background .prices .prices__products .prices__product {
+.background .container .text-information .text-information__main .text-information__consultation .text-information__white-little-title, .background .prices .prices__products .prices__product, .background .prices .prices__consultation-block .prices__advantages .prices__advantage {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF; }
 
-.background .container .text-information .text-information__sidebar, .background .container .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text {
+.background .container .text-information .text-information__sidebar, .background .container .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text, .background .footer .container .contacts .contacts__phones-block .contacts__phones .contacts__phone, .background .footer .container .contacts .contacts__email, .background .footer .container .contacts .contacts__adress-block .contacts__adress {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -51,9 +51,41 @@
   line-height: 140%;
   color: #FFFFFF; }
 
+.background .prices .prices__products .prices__product::before, .background .prices .prices__consultation-block .prices__advantages .prices__advantage::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  background-color: #F2BF14;
+  border-radius: 50%; }
+
+.background .container .text-information .text-information__main .text-information__consultation .text-information__consultation-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding: 12px 20px;
+  background-color: #F2BF14;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.background .container .benefits .benefits__call, .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s; }
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Museo Sans Cyrl', sans-serif; }
 
 .container {
@@ -75,7 +107,8 @@
       width: 50%;
       grid-gap: 10%; }
       .background .container header .header__logo {
-        position: absolute;
+        position: fixed;
+        width: 143px;
         cursor: pointer; }
       .background .container header .header__contacts {
         display: flex;
@@ -101,6 +134,30 @@
           align-items: center;
           cursor: pointer;
           transition: 0.3s; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(1) {
+          background-image: url(./img/social/whatsapp-img.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(2) {
+          background-image: url(./img/social/viber-img.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(3) {
+          background: url(./img/social/telegram-img.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(1):hover {
+          background-image: url(./img/social/whatsapp-img-black.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(2):hover {
+          background-image: url(./img/social/viber-img-black.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
+        .background .container header .header__social-blocks .header__social-block:nth-of-type(3):hover {
+          background-image: url(./img/social/telegram-img-black.svg);
+          background-position: center;
+          background-repeat: no-repeat; }
         .background .container header .header__social-blocks .header__social-block:hover {
           background: #FFE600;
           color: #333333;
@@ -109,7 +166,8 @@
       width: 50%;
       position: relative; }
       .background .container .text-information .text-information__sidebar {
-        position: absolute;
+        position: fixed;
+        left: 0;
         font-weight: 700; }
         .background .container .text-information .text-information__sidebar .sidebar {
           list-style-type: none;
@@ -118,14 +176,16 @@
           .background .container .text-information .text-information__sidebar .sidebar .sidebar__item {
             cursor: pointer;
             position: relative;
-            transition: 0.3s; }
+            transition: 0.3s;
+            padding-left: 60px;
+            width: 175px; }
             .background .container .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar__yellow-line {
               position: absolute;
               content: '';
               width: 30px;
               height: 1px;
               background-color: #CCCCCC;
-              left: -60px;
+              left: 0;
               top: 11px; }
           .background .container .text-information .text-information__sidebar .sidebar .sidebar__item:hover {
             color: #F2BF14;
@@ -150,18 +210,7 @@
         display: grid;
         row-gap: 15px; }
         .background .container .text-information .text-information__main .text-information__consultation .text-information__consultation-button {
-          display: flex;
-          width: 35%;
-          justify-content: center;
-          align-items: center;
-          font-weight: 700;
-          font-size: 14px;
-          line-height: 24px;
-          color: #333333;
-          padding: 12px 20px;
-          background-color: #F2BF14;
-          cursor: pointer;
-          transition: 0.3s; }
+          width: 35%; }
         .background .container .text-information .text-information__main .text-information__consultation .text-information__consultation-button:hover {
           background-color: #FFE600;
           transition: 0.3s; }
@@ -174,19 +223,9 @@
       .background .container .benefits .benefits__benefit .benefits__benefit-text {
         padding-top: 12px; }
       .background .container .benefits .benefits__call {
-        position: absolute;
-        bottom: 0;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 24px;
-        color: #FFFFFF;
-        cursor: pointer;
+        position: fixed;
         width: 143px;
-        padding: 9px 0;
-        background-color: #333333;
-        display: flex;
-        justify-content: center;
-        transition: 0.3s; }
+        padding: 9px 0; }
       .background .container .benefits .benefits__call:hover {
         color: #333333;
         background-color: #FFE600;
@@ -202,6 +241,8 @@
         width: 100%; }
         .background .container .slider-block .slider-block__slider .slick-list {
           width: 100%; }
+          .background .container .slider-block .slider-block__slider .slick-list .slick-track {
+            width: 100%; }
         .background .container .slider-block .slider-block__slider .slider-block__arrow-left, .background .container .slider-block .slider-block__slider .slider-block__arrow-right {
           position: absolute;
           top: calc(50% - 30px);
@@ -271,7 +312,8 @@
               color: #CCCCCC; }
   .background .prices .prices__title {
     color: white;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    padding-top: 35px; }
   .background .prices .prices__action-text {
     padding-bottom: 10px; }
   .background .prices .prices__products {
@@ -287,53 +329,49 @@
       align-items: center;
       padding-left: 16px; }
     .background .prices .prices__products .prices__product::before {
-      position: absolute;
-      left: 0;
-      content: '';
       width: 8px;
-      height: 8px;
-      background-color: #F2BF14;
-      border-radius: 50%; }
-  .background .slider-of-prices {
+      height: 8px; }
+  .background .prices .slider-of-prices {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px; }
-    .background .slider-of-prices .slider-of-prices__products, .background .slider-of-prices .slider-of-prices__yelllow-block {
+    grid-gap: 30px;
+    padding: 20px 0; }
+    .background .prices .slider-of-prices .slider-of-prices__products, .background .prices .slider-of-prices .slider-of-prices__yelllow-block {
       padding: 30px;
       background-color: #232323;
       display: grid;
       grid-gap: 40px; }
-      .background .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block, .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block {
+      .background .prices .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block, .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block {
         display: grid;
         grid-gap: 20px; }
-        .background .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-title, .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-title {
+        .background .prices .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-title, .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-title {
           font-weight: 700;
           font-size: 22px;
           line-height: 26px;
           color: #FFFFFF; }
-        .background .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-date, .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-date {
+        .background .prices .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-date, .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-date {
           font-weight: 700;
           font-size: 16px;
           line-height: 160%;
           color: #CCCCCC;
           padding-bottom: 8px; }
-        .background .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-price, .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-price {
+        .background .prices .slider-of-prices .slider-of-prices__products .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-price, .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__products-block .slider-of-prices__product .slider-of-prices__product-price {
           font-weight: 500;
           font-size: 16px;
           line-height: 160%;
           color: #F2BF14; }
-    .background .slider-of-prices .slider-of-prices__yelllow-block {
+    .background .prices .slider-of-prices .slider-of-prices__yelllow-block {
       background-color: #F2BF14; }
-      .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list {
+      .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list {
         list-style-type: none; }
-        .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list .slider-of-prices__yelllow-block-item {
+        .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list .slider-of-prices__yelllow-block-item {
           font-weight: 500;
           font-size: 15px;
           line-height: 140%;
           color: #333333;
           position: relative;
           padding-left: 30px; }
-        .background .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list .slider-of-prices__yelllow-block-item::before {
+        .background .prices .slider-of-prices .slider-of-prices__yelllow-block .slider-of-prices__yelllow-block-list .slider-of-prices__yelllow-block-item::before {
           content: '';
           width: 18px;
           height: 14px;
@@ -341,3 +379,108 @@
           background-position: center;
           position: absolute;
           left: 0; }
+  .background .prices .prices__consultation-block {
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 3fr 2fr; }
+    .background .prices .prices__consultation-block .prices__advantages {
+      padding: 30px;
+      display: grid;
+      grid-gap: 5px; }
+      .background .prices .prices__consultation-block .prices__advantages .prices__advantage {
+        position: relative;
+        padding-left: 14px;
+        display: flex;
+        align-items: center; }
+      .background .prices .prices__consultation-block .prices__advantages .prices__advantage::before {
+        width: 6px;
+        height: 6px; }
+    .background .prices .prices__consultation-block .prices__consultation-button-block {
+      background-size: cover;
+      opacity: 0.5; }
+      .background .prices .prices__consultation-block .prices__consultation-button-block .prices__consultation-button-block-shaddow {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-right: 40px;
+        height: 100%;
+        background-image: url(./img/button-consultation-background.png); }
+        .background .prices .prices__consultation-block .prices__consultation-button-block .prices__consultation-button-block-shaddow .prices__consultation-button {
+          opacity: 0.5;
+          width: 100%;
+          height: 100%;
+          background: #232323;
+          background: linear-gradient(90deg, #232323 0%, rgba(196, 196, 196, 0) 57%); }
+  .background .footer {
+    background-color: #F2BF14;
+    position: relative; }
+    .background .footer .footer__map {
+      position: absolute;
+      left: 0;
+      width: 50vw;
+      height: 100%;
+      z-index: 1; }
+      .background .footer .footer__map iframe {
+        width: 100%;
+        height: 100%; }
+    .background .footer .container {
+      padding-bottom: 0px;
+      position: relative; }
+      .background .footer .container .contacts {
+        position: relative;
+        left: 50%;
+        width: 50%;
+        display: grid;
+        grid-gap: 20px;
+        padding: 30px 0 30px 60px;
+        right: 0; }
+        .background .footer .container .contacts .contacts__title {
+          color: #333333; }
+        .background .footer .container .contacts .contacts__phones-block {
+          display: grid;
+          grid-template-columns: 2fr 3fr; }
+          .background .footer .container .contacts .contacts__phones-block .contacts__phones {
+            align-self: center; }
+            .background .footer .container .contacts .contacts__phones-block .contacts__phones .contacts__phone {
+              display: block;
+              text-decoration: none;
+              color: #333333; }
+          .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
+            padding: 12px 0;
+            width: 180px; }
+          .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button:hover {
+            color: #333333;
+            background-color: #FFE600;
+            transition: 0.3s; }
+        .background .footer .container .contacts .contacts__email {
+          text-decoration: none;
+          color: #333333; }
+        .background .footer .container .contacts .contacts__adress-block {
+          display: grid;
+          grid-template-columns: 2fr 3fr;
+          padding-bottom: 100px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+          .background .footer .container .contacts .contacts__adress-block .contacts__adress {
+            color: #333333; }
+          .background .footer .container .contacts .contacts__adress-block .contacts__social-blocks {
+            display: flex;
+            column-gap: 4px;
+            justify-self: center;
+            align-self: center;
+            justify-self: left; }
+            .background .footer .container .contacts .contacts__adress-block .contacts__social-blocks .contacts__social-block {
+              background-color: rgba(0, 0, 0, 0.1);
+              width: 32px;
+              height: 32px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              transition: 0.3s; }
+        .background .footer .container .contacts .contacts__logo-block .contacts__logo {
+          cursor: pointer; }
+        .background .footer .container .contacts .contacts__logo-block .contacts__all-right-reserved {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 140%;
+          color: rgba(51, 51, 51, 0.6); }
