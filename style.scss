@@ -110,6 +110,7 @@ $padding-in-prices-blocks: 30px;
 .background{
   background-image: url(./img/main-background.png);
   background-repeat: repeat;
+  position: relative;
 
   .start-page-block{
     position: relative;
@@ -673,6 +674,7 @@ $padding-in-prices-blocks: 30px;
       .footer__map{
         width: 100%;
         height: 100%;
+        border: 0;
 
         iframe{
           width: 100%;
@@ -781,6 +783,60 @@ $padding-in-prices-blocks: 30px;
       }
     }
   }
+  .get-help__block-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    display: none;
+    z-index: 1;
+  }
+
+  .get-help__block{
+    z-index: 1;
+    .get-help__window{
+      display: none;
+      position: fixed;
+      bottom: 140px;
+      right: 50px;
+      width: 300px;
+      grid-gap: 10px;
+      padding: 20px;
+      background-color: #CCCCCC;
+      border-radius: 10px;
+      transition: 1s;
+      z-index: 2;
+
+      .get-help__name, .get-help__phone, .get-help__comment, .get-help__send-button{
+        border: 0;
+        background-color: white;
+        min-height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    }
+
+    .get-help__button{
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      border-radius: 50%;
+      background-color: #FFE600;
+      background-image: url(./img/get-help/icon-speech.png);
+      background-size: 40px 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: 1s;
+      z-index: 2;
+    }
+  }
+
 }
 
 @media (max-width: 1600px) {

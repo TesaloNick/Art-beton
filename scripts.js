@@ -53,7 +53,6 @@ ourWorksButton.style.color = '#F2BF14'
 ourWorksButton.previousSibling.style.backgroundColor = '#F2BF14'
 
 window.addEventListener('scroll', () => {
-  console.log(window.pageYOffset);
   if (window.pageYOffset+window.innerHeight >= footer.offsetTop) {
     mapButton.style.color = '#F2BF14'
     mapButton.previousSibling.style.backgroundColor = '#F2BF14'
@@ -81,3 +80,32 @@ window.addEventListener('scroll', () => {
 ourWorksButton.addEventListener('click', () => scrollTo(background, ourWorksButton))
 pricesButton.addEventListener('click', () => scrollTo(prices, pricesButton))
 mapButton.addEventListener('click', () => scrollTo(footer, mapButton))
+
+const getHelpButton = document.querySelector('.get-help__button')
+const getHelpBlockBackground = document.querySelector('.get-help__block-background')
+const getHelpWindow = document.querySelector('.get-help__window')
+const getHelpSendButton = document.querySelector('.get-help__send-button')
+
+
+getHelpButton.addEventListener('click', () => {
+  console.log(getHelpBlockBackground.style.backgroundColor);
+  if (getHelpBlockBackground.style.backgroundColor == 'rgba(204, 204, 204, 0.376)') {
+    getHelpBlockBackground.style.backgroundColor = 'rgba(204, 204, 204, 0)'
+    getHelpButton.style.backgroundImage = 'url(./img/get-help/icon-speech.png)'
+    getHelpButton.style.backgroundColor = '#FFE600'
+    getHelpWindow.style.display = 'none'
+    getHelpBlockBackground.style.display = 'none'
+  } else{
+    getHelpBlockBackground.style.backgroundColor = 'rgba(204, 204, 204, 0.376)'
+    getHelpButton.style.backgroundImage = 'url(./img/get-help/icon-cross.png)'
+    getHelpButton.style.backgroundColor = '#CCCCCC'
+    getHelpWindow.style.display = 'grid'  
+    getHelpBlockBackground.style.display = 'block'  
+  }
+})
+getHelpSendButton.addEventListener('click', () => {
+  getHelpBlockBackground.style.backgroundColor = 'rgba(204, 204, 204, 0)'
+  getHelpButton.style.backgroundImage = 'url(./img/get-help/icon-speech.png)'
+  getHelpButton.style.backgroundColor = '#FFE600'
+  getHelpWindow.style.display = 'none'
+})
