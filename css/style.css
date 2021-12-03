@@ -1,8 +1,8 @@
-.background .start-page-block .start-page .header .header__logo, .background .start-page-block .start-page .text-information .text-information__sidebar, .background .start-page-block .benefits__block .container .benefits .benefits__call {
+.background .start-page-block .start-page .head .head__logo, .background .start-page-block .start-page .text-information .text-information__sidebar, .background .start-page-block .benefits__block .container .benefits .benefits__call {
   left: 60px;
   width: 180px; }
 
-.background .start-page-block .header__adress-up, .background .start-page-block .start-page .header .header__contacts .header__adress, .background .start-page-block .start-page .header .header__contacts .header__phones-and-email a {
+.background .start-page-block .head__adress-up, .background .start-page-block .start-page .head .head__contacts .head__adress, .background .start-page-block .start-page .head .head__contacts .head__phones-and-email a {
   display: block;
   font-style: normal;
   font-weight: normal;
@@ -10,7 +10,7 @@
   line-height: 18px;
   color: #FFFFFF; }
 
-.background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title, .background .prices .prices__title, .background .footer .container .contacts .contacts__title {
+.background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__white-main-title, .background .prices .prices__title, .background .foot .container .contacts .contacts__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px; }
@@ -21,7 +21,7 @@
   line-height: 140%;
   color: #FFFFFF; }
 
-.background .start-page-block .start-page .text-information .text-information__sidebar, .background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text, .background .footer .container .contacts .contacts__phones-block .contacts__phones .contacts__phone, .background .footer .container .contacts .contacts__email, .background .footer .container .contacts .contacts__adress-block .contacts__adress {
+.background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar-button, .background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text, .background .foot .container .contacts .contacts__phones-block .contacts__phones .contacts__phone, .background .foot .container .contacts .contacts__email, .background .foot .container .contacts .contacts__adress-block .contacts__adress {
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -53,7 +53,7 @@
   cursor: pointer;
   transition: 0.3s; }
 
-.background .start-page-block .benefits__block .container .benefits .benefits__call, .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
+.background .start-page-block .benefits__block .container .benefits .benefits__call, .background .foot .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
@@ -81,37 +81,37 @@
   .background .start-page-block {
     position: relative;
     height: 100vh; }
-    .background .start-page-block .header__adress-up {
+    .background .start-page-block .head__adress-up {
       display: none; }
     .background .start-page-block .start-page {
       padding-bottom: 4vh; }
-      .background .start-page-block .start-page .header {
+      .background .start-page-block .start-page .head {
         display: grid;
         grid-auto-flow: column;
         align-items: center;
         padding: 4vh 0 8vh 0;
         position: relative;
         width: 50%; }
-        .background .start-page-block .start-page .header .header__logo {
+        .background .start-page-block .start-page .head .head__logo {
           position: fixed;
           width: 143px;
           cursor: pointer; }
-        .background .start-page-block .start-page .header .header__contacts {
+        .background .start-page-block .start-page .head .head__contacts {
           display: flex;
           flex-direction: row-reverse;
           column-gap: 20%;
           justify-content: space-between; }
-          .background .start-page-block .start-page .header .header__contacts .header__phones-and-email {
+          .background .start-page-block .start-page .head .head__contacts .head__phones-and-email {
             display: grid;
             row-gap: 10px; }
-            .background .start-page-block .start-page .header .header__contacts .header__phones-and-email a {
+            .background .start-page-block .start-page .head .head__contacts .head__phones-and-email a {
               text-decoration: none; }
-        .background .start-page-block .start-page .header .header__social-blocks {
+        .background .start-page-block .start-page .head .head__social-blocks {
           display: flex;
           column-gap: 4px;
           justify-self: center;
           align-self: flex-start; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block {
+          .background .start-page-block .start-page .head .head__social-blocks .head__social-block {
             background: rgba(0, 0, 0, 0.4);
             width: 32px;
             height: 32px;
@@ -120,34 +120,34 @@
             align-items: center;
             cursor: pointer;
             transition: 0.3s; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(1) {
-            background-image: url(../img/social/whatsapp-img.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(2) {
-            background-image: url(../img/social/viber-img.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(3) {
-            background-image: url(../img/social/telegram-img.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(1):hover {
-            background-image: url(../img/social/whatsapp-img-black.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(2):hover {
-            background-image: url(../img/social/viber-img-black.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:nth-of-type(3):hover {
-            background-image: url(../img/social/telegram-img-black.svg);
-            background-position: center;
-            background-repeat: no-repeat; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block:hover {
+          .background .start-page-block .start-page .head .head__social-blocks .head__social-block:hover {
             background: #FFE600;
             color: #333333;
             transition: 0.3s; }
+          .background .start-page-block .start-page .head .head__social-blocks .whatsapp {
+            background-image: url(../img/social/whatsapp-img.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .background .start-page-block .start-page .head .head__social-blocks .viber {
+            background-image: url(../img/social/viber-img.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .background .start-page-block .start-page .head .head__social-blocks .telegram {
+            background-image: url(../img/social/telegram-img.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .background .start-page-block .start-page .head .head__social-blocks .whatsapp:hover {
+            background-image: url(../img/social/whatsapp-img-black.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .background .start-page-block .start-page .head .head__social-blocks .viber:hover {
+            background-image: url(../img/social/viber-img-black.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .background .start-page-block .start-page .head .head__social-blocks .telegram:hover {
+            background-image: url(../img/social/telegram-img-black.svg);
+            background-position: center;
+            background-repeat: no-repeat; }
       .background .start-page-block .start-page .text-information {
         width: 50%;
         position: relative; }
@@ -165,6 +165,8 @@
               transition: 0.3s;
               padding-left: 60px;
               width: 175px; }
+              .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar-button {
+                text-decoration: none; }
               .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar__yellow-line {
                 position: absolute;
                 content: '';
@@ -194,7 +196,8 @@
           row-gap: 15px;
           width: 90%; }
           .background .start-page-block .start-page .text-information .text-information__main .text-information__consultation .text-information__consultation-button {
-            width: 40%; }
+            width: 40%;
+            border: 0; }
           .background .start-page-block .start-page .text-information .text-information__main .text-information__consultation .text-information__consultation-button:hover {
             background-color: #FFE600;
             transition: 0.3s; }
@@ -314,7 +317,8 @@
           position: fixed;
           width: 143px;
           padding: 9px 0;
-          bottom: 60px; }
+          bottom: 60px;
+          border: 0; }
         .background .start-page-block .benefits__block .container .benefits .benefits__call:hover {
           color: #333333;
           background-color: #FFE600;
@@ -427,31 +431,32 @@
         padding-right: 40px;
         height: 100%; }
         .background .consultation-block .consultation-block__consultation-button-block .consultation-block__consultation-button-block-shaddow .consultation-block__consultation-button {
-          background: #F2BF14; }
+          background: #F2BF14;
+          border: 0; }
         .background .consultation-block .consultation-block__consultation-button-block .consultation-block__consultation-button-block-shaddow .consultation-block__consultation-button:hover {
           background-color: #FFE600;
           transition: 0.3s; }
-  .background .footer {
+  .background .foot {
     background-color: #F2BF14;
     position: relative; }
-    .background .footer .footer__map-block {
+    .background .foot .foot__map-block {
       position: absolute;
       left: 0;
       width: 50vw;
       height: 100%;
       z-index: 1; }
-      .background .footer .footer__map-block .footer__map {
+      .background .foot .foot__map-block .foot__map {
         width: 100%;
         height: 100%;
         border: 0; }
-        .background .footer .footer__map-block .footer__map iframe {
+        .background .foot .foot__map-block .foot__map iframe {
           width: 100%;
           height: 100%;
           border: 0px; }
-    .background .footer .container {
+    .background .foot .container {
       padding-bottom: 0px;
       position: relative; }
-      .background .footer .container .contacts {
+      .background .foot .container .contacts {
         position: relative;
         left: 50%;
         width: 50%;
@@ -459,41 +464,42 @@
         grid-gap: 20px;
         padding: 30px 0 30px 60px;
         right: 0; }
-        .background .footer .container .contacts .contacts__title {
+        .background .foot .container .contacts .contacts__title {
           color: #333333; }
-        .background .footer .container .contacts .contacts__phones-block {
+        .background .foot .container .contacts .contacts__phones-block {
           display: grid;
           grid-template-columns: 2fr 3fr; }
-          .background .footer .container .contacts .contacts__phones-block .contacts__phones {
+          .background .foot .container .contacts .contacts__phones-block .contacts__phones {
             align-self: center; }
-            .background .footer .container .contacts .contacts__phones-block .contacts__phones .contacts__phone {
+            .background .foot .container .contacts .contacts__phones-block .contacts__phones .contacts__phone {
               display: block;
               text-decoration: none;
               color: #333333; }
-          .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
+          .background .foot .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
             padding: 12px 0;
-            width: 180px; }
-          .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button:hover {
+            width: 180px;
+            border: 0; }
+          .background .foot .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button:hover {
             color: #333333;
             background-color: #FFE600;
             transition: 0.3s; }
-        .background .footer .container .contacts .contacts__email {
+        .background .foot .container .contacts .contacts__email {
           text-decoration: none;
           color: #333333; }
-        .background .footer .container .contacts .contacts__adress-block {
+        .background .foot .container .contacts .contacts__adress-block {
           display: grid;
           grid-template-columns: 2fr 3fr;
           padding-bottom: 100px;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-          .background .footer .container .contacts .contacts__adress-block .contacts__adress {
+          .background .foot .container .contacts .contacts__adress-block .contacts__adress {
             color: #333333; }
-          .background .footer .container .contacts .contacts__adress-block .contacts__social-blocks {
+          .background .foot .container .contacts .contacts__adress-block .contacts__social-blocks {
             display: flex;
             column-gap: 4px;
             justify-self: center;
             align-self: center;
             justify-self: left; }
-            .background .footer .container .contacts .contacts__adress-block .contacts__social-blocks .contacts__social-block {
+            .background .foot .container .contacts .contacts__adress-block .contacts__social-blocks .contacts__social-block {
               background-color: rgba(0, 0, 0, 0.1);
               width: 32px;
               height: 32px;
@@ -502,9 +508,9 @@
               align-items: center;
               cursor: pointer;
               transition: 0.3s; }
-        .background .footer .container .contacts .contacts__logo-block .contacts__logo {
+        .background .foot .container .contacts .contacts__logo-block .contacts__logo {
           cursor: pointer; }
-        .background .footer .container .contacts .contacts__logo-block .contacts__all-right-reserved {
+        .background .foot .container .contacts .contacts__logo-block .contacts__all-right-reserved {
           font-weight: normal;
           font-size: 12px;
           line-height: 140%;
@@ -575,12 +581,12 @@
 
   .background .start-page-block {
     position: relative; }
-    .background .start-page-block .start-page .header {
+    .background .start-page-block .start-page .head {
       padding: 3vh 0 3vh 0; }
-      .background .start-page-block .start-page .header .header__logo {
+      .background .start-page-block .start-page .head .head__logo {
         position: relative;
         left: 0; }
-      .background .start-page-block .start-page .header .header__contacts {
+      .background .start-page-block .start-page .head .head__contacts {
         flex-direction: column;
         row-gap: 10px; }
     .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar {
@@ -654,28 +660,27 @@
       right: 0; }
     .background .slider-of-prices .slider-of-prices__block .slider-block__arrow-left {
       left: 0; }
-  .background .footer .container .contacts .contacts__phones-block {
+  .background .foot .container .contacts .contacts__phones-block {
     grid-template-columns: 1fr 1fr; }
-    .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block {
+    .background .foot .container .contacts .contacts__phones-block .contacts__phones-button-block {
       justify-self: end; }
-  .background .footer .container .contacts .contacts__adress-block {
+  .background .foot .container .contacts .contacts__adress-block {
     grid-template-columns: 1fr 1fr; }
-    .background .footer .container .contacts .contacts__adress-block .contacts__social-blocks {
+    .background .foot .container .contacts .contacts__adress-block .contacts__social-blocks {
       justify-self: end; } }
 @media (max-width: 950px) {
-  .background .start-page-block .start-page .text-information .text-information__sidebar, .background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text, .background .footer .container .contacts .contacts__phones-block .contacts__phones .contacts__phone, .background .footer .container .contacts .contacts__email, .background .footer .container .contacts .contacts__adress-block .contacts__adress {
+  .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar-button, .background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__grey-regular-text, .background .prices .prices__action-text, .background .foot .container .contacts .contacts__phones-block .contacts__phones .contacts__phone, .background .foot .container .contacts .contacts__email, .background .foot .container .contacts .contacts__adress-block .contacts__adress {
     font-size: 14px; }
 
   .background .start-page-block {
     height: auto; }
-    .background .start-page-block .header__adress-up {
+    .background .start-page-block .head__adress-up {
       position: absolute;
       width: 100%;
       height: 32px;
       display: block;
-      z-index: 1;
       background: rgba(0, 0, 0, 0.4); }
-      .background .start-page-block .header__adress-up p {
+      .background .start-page-block .head__adress-up p {
         max-width: 90%;
         margin: auto;
         display: flex;
@@ -684,19 +689,19 @@
         height: 100%; }
     .background .start-page-block .start-page {
       padding-bottom: 4px; }
-      .background .start-page-block .start-page .header {
+      .background .start-page-block .start-page .head {
         width: 100%;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: 32px 1fr;
         padding-top: 0; }
-        .background .start-page-block .start-page .header .header__logo {
+        .background .start-page-block .start-page .head .head__logo {
           padding: 20px 0; }
-        .background .start-page-block .start-page .header .header__contacts {
+        .background .start-page-block .start-page .head .head__contacts {
           justify-self: flex-end;
           padding: 20px 0; }
-          .background .start-page-block .start-page .header .header__contacts .header__adress {
+          .background .start-page-block .start-page .head .head__contacts .head__adress {
             display: none; }
-        .background .start-page-block .start-page .header .header__social-blocks {
+        .background .start-page-block .start-page .head .head__social-blocks {
           grid-column-start: 1;
           grid-column-end: 3;
           grid-row-start: 1;
@@ -705,7 +710,7 @@
           width: 115px;
           grid-template-columns: 1fr 1fr 1fr;
           justify-self: right; }
-          .background .start-page-block .start-page .header .header__social-blocks .header__social-block {
+          .background .start-page-block .start-page .head .head__social-blocks .head__social-block {
             justify-self: center;
             z-index: 2;
             background-color: transparent; }
@@ -773,24 +778,24 @@
       padding-bottom: 20px; }
       .background .consultation-block .consultation-block__consultation-button-block .consultation-block__consultation-button-block-shaddow {
         background-image: none; }
-  .background .footer .footer__map-block {
+  .background .foot .foot__map-block {
     position: relative;
     width: 100%;
     left: 0%;
     height: 375px; }
-  .background .footer .container .contacts {
+  .background .foot .container .contacts {
     width: 100%;
     left: 0;
     padding: 30px 0; }
-    .background .footer .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
+    .background .foot .container .contacts .contacts__phones-block .contacts__phones-button-block .contacts__phones-button {
       width: 143px; }
-    .background .footer .container .contacts .contacts__adress-block {
+    .background .foot .container .contacts .contacts__adress-block {
       padding-bottom: 30px; }
-    .background .footer .container .contacts .contacts__logo-block {
+    .background .foot .container .contacts .contacts__logo-block {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .background .footer .container .contacts .contacts__logo-block .contacts__all-right-reserved {
+      .background .foot .container .contacts .contacts__logo-block .contacts__all-right-reserved {
         font-weight: normal;
         font-size: 12px;
         line-height: 140%;
@@ -801,7 +806,7 @@
   .container {
     max-width: 84%; }
 
-  .background .start-page-block .header__adress-up p {
+  .background .start-page-block .head__adress-up p {
     max-width: 84%; }
   .background .start-page-block .start-page .text-information .text-information__main .text-information__concrete-definition .text-information__yellow-title {
     font-size: 16px;

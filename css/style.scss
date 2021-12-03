@@ -6,7 +6,7 @@ $padding-in-prices-blocks: 30px;
   width: 180px;
 } 
 
-%header-text-style{
+%head-text-style{
   display: block;
   font-style: normal;
   font-weight: normal;
@@ -97,15 +97,15 @@ $padding-in-prices-blocks: 30px;
     position: relative;
     height: 100vh;
 
-    .header__adress-up{
+    .head__adress-up{
       display: none;
-      @extend %header-text-style
+      @extend %head-text-style
     }
 
     .start-page{
       padding-bottom: 4vh;
   
-      .header{
+      .head{
         display: grid;
         grid-auto-flow: column;
         align-items: center;
@@ -113,41 +113,41 @@ $padding-in-prices-blocks: 30px;
         position: relative;
         width: 50%;
   
-        .header__logo{
+        .head__logo{
           position: fixed;
           @extend %left-indent;
           width: 143px;
           cursor: pointer;
         }
   
-        .header__contacts{
+        .head__contacts{
           display: flex;
           flex-direction: row-reverse;
           column-gap: 20%;
           justify-content: space-between;
   
-          .header__adress{
-            @extend %header-text-style
+          .head__adress{
+            @extend %head-text-style
           }
   
-          .header__phones-and-email{
+          .head__phones-and-email{
             display: grid;
             row-gap: 10px;
   
             a{
               text-decoration: none;
-              @extend %header-text-style
+              @extend %head-text-style
             }
           }
         }
   
-        .header__social-blocks{
+        .head__social-blocks{
           display: flex;
           column-gap: 4px;
           justify-self: center;
           align-self: flex-start;
   
-          .header__social-block{
+          .head__social-block{
             background: rgba(0, 0, 0, 0.4);
             width: 32px;
             height: 32px;
@@ -157,48 +157,49 @@ $padding-in-prices-blocks: 30px;
             cursor: pointer;
             transition: $transition-time;
           }
-  
-          .header__social-block:nth-of-type(1){
+    
+          .head__social-block:hover{
+            background: #FFE600;
+            color: #333333;
+            transition: $transition-time;
+          }
+
+          .whatsapp{
             background-image: url(../img/social/whatsapp-img.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
   
-          .header__social-block:nth-of-type(2){
+          .viber{
             background-image: url(../img/social/viber-img.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
   
-          .header__social-block:nth-of-type(3){
+          .telegram{
             background-image: url(../img/social/telegram-img.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
   
-          .header__social-block:nth-of-type(1):hover{
+          .whatsapp:hover{
             background-image: url(../img/social/whatsapp-img-black.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
   
-          .header__social-block:nth-of-type(2):hover{
+          .viber:hover{
             background-image: url(../img/social/viber-img-black.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
   
-          .header__social-block:nth-of-type(3):hover{
+          .telegram:hover{
             background-image: url(../img/social/telegram-img-black.svg);
             background-position: center;
             background-repeat: no-repeat;
           }
-  
-          .header__social-block:hover{
-            background: #FFE600;
-            color: #333333;
-            transition: $transition-time;
-          }
+
         }
       }
   
@@ -207,7 +208,6 @@ $padding-in-prices-blocks: 30px;
         position: relative;
   
         .text-information__sidebar{
-          @extend %grey-regular-text;
           position: fixed;
           @extend %left-indent;
           left: 0;
@@ -224,6 +224,12 @@ $padding-in-prices-blocks: 30px;
               transition: $transition-time;
               padding-left: 60px;
               width: 175px;
+
+              .sidebar-button{
+                text-decoration: none;
+                @extend %grey-regular-text;
+
+              }
   
               .sidebar__yellow-line{
                 position: absolute;
@@ -284,6 +290,7 @@ $padding-in-prices-blocks: 30px;
             .text-information__consultation-button{
               width: 40%;
               @extend %consultation-button;
+              border: 0;
             }
             
             .text-information__consultation-button:hover{
@@ -465,6 +472,7 @@ $padding-in-prices-blocks: 30px;
             width: 143px;
             padding: 9px 0;
             bottom: 60px;
+            border: 0;
           }
     
           .benefits__call:hover{
@@ -642,6 +650,7 @@ $padding-in-prices-blocks: 30px;
         .consultation-block__consultation-button{
           background: #F2BF14;
           @extend %consultation-button;
+          border: 0;
         }
         
         .consultation-block__consultation-button:hover{
@@ -652,18 +661,18 @@ $padding-in-prices-blocks: 30px;
     }
   }
 
-  .footer {
+  .foot {
     background-color: #F2BF14;
     position: relative;
 
-    .footer__map-block {
+    .foot__map-block {
       position: absolute;
       left: 0;
       width: 50vw;
       height: 100%;
       z-index: 1;
 
-      .footer__map{
+      .foot__map{
         width: 100%;
         height: 100%;
         border: 0;
@@ -714,6 +723,7 @@ $padding-in-prices-blocks: 30px;
               @extend %call-back-button;
               padding: 12px 0;
               width: 180px;
+              border: 0;
             }
       
             .contacts__phones-button:hover{
@@ -865,15 +875,15 @@ $padding-in-prices-blocks: 30px;
       position: relative;
       
       .start-page{
-        .header{
+        .head{
           padding: 3vh 0 3vh 0;
   
-          .header__logo{
+          .head__logo{
             position: relative;
             left: 0;
           }
   
-          .header__contacts{
+          .head__contacts{
             flex-direction: column;
             row-gap: 10px;
           }
@@ -1015,7 +1025,7 @@ $padding-in-prices-blocks: 30px;
       }
     }
 
-    .footer {
+    .foot {
       .container{
         .contacts {
           .contacts__phones-block {
@@ -1045,12 +1055,11 @@ $padding-in-prices-blocks: 30px;
     .start-page-block{
       height: auto;
 
-      .header__adress-up{
+      .head__adress-up{
         position: absolute;
         width: 100%;
         height: 32px;
         display: block;
-        z-index: 1;
         background: rgba(0, 0, 0, 0.4);        
 
         p {
@@ -1066,26 +1075,26 @@ $padding-in-prices-blocks: 30px;
       .start-page{ 
         padding-bottom: 4px; 
 
-        .header{
+        .head{
           width: 100%;
           grid-template-columns: 3fr 2fr;
           grid-template-rows: 32px 1fr;
           padding-top: 0;
   
-          .header__logo{
+          .head__logo{
             padding: 20px 0;
           }
   
-          .header__contacts{
+          .head__contacts{
             justify-self: flex-end;
             padding: 20px 0;
   
-            .header__adress{
+            .head__adress{
               display: none;
             }
           }
   
-          .header__social-blocks{
+          .head__social-blocks{
             grid-column-start: 1;
             grid-column-end: 3;
             grid-row-start: 1;
@@ -1095,7 +1104,7 @@ $padding-in-prices-blocks: 30px;
             grid-template-columns: 1fr 1fr 1fr;
             justify-self: right;
   
-            .header__social-block{
+            .head__social-block{
               justify-self: center;
               z-index: 2;
               background-color: transparent;
@@ -1237,8 +1246,8 @@ $padding-in-prices-blocks: 30px;
 
     }
 
-    .footer {
-      .footer__map-block {
+    .foot {
+      .foot__map-block {
         position: relative;
         width: 100%;
         left: 0%;
@@ -1296,7 +1305,7 @@ $padding-in-prices-blocks: 30px;
 
   .background{
     .start-page-block{
-      .header__adress-up{      
+      .head__adress-up{      
         p {
           max-width: 84%;
         }

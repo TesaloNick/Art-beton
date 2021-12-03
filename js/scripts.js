@@ -39,7 +39,7 @@ const pricesButton = document.querySelector('.sidebar__prices-button')
 const mapButton = document.querySelector('.sidebar__map-button')
 const background = document.querySelector('.background')
 const prices = document.querySelector('.prices')
-const footer = document.querySelector('.footer')
+const footer = document.querySelector('.foot')
 
 function scrollTo(scrollToElement, button) {
   window.scroll({

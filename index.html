@@ -13,38 +13,38 @@
 <body>
   <div class="background">
     <div class="start-page-block">
-      <div class="header__adress-up">
+      <div class="head__adress-up">
         <p>г. Витебск, ул. Транспортная д. 9А</p>
       </div>
       <div class="start-page container">
-        <header class="header">
-          <div class="header__logo"><img src="./img/main-logo.svg" alt="main-logo"></div>
-          <div class="header__contacts">
-            <div class="header__adress">
+        <header class="head">
+          <a href="#"><div class="head__logo"><img src="./img/main-logo.svg" alt="main-logo"></div></a>
+          <div class="head__contacts">
+            <div class="head__adress">
               <p>г. Витебск,<br> ул. Транспортная д. 9А</p>
             </div>
-            <div class="header__phones-and-email">
-              <div class="header__phones">
-                <a href="tel:+375336384775" class="header__phone">+375 33 638-47-75</a>
-                <a href="tel:+375292945346" class="header__phone">+375 29 294-53-46</a>
+            <div class="head__phones-and-email">
+              <div class="head__phones">
+                <a href="tel:+375336384775" class="head__phone">+375 33 638-47-75</a>
+                <a href="tel:+375292945346" class="head__phone">+375 29 294-53-46</a>
               </div>
-              <div class="header__email">
+              <div class="head__email">
                 <a href="mailto:info@art-beton.by">info@art-beton.by</a>
               </div>
             </div>
           </div>
-          <div class="header__social-blocks">
-            <div class="header__social-block"></div>
-            <div class="header__social-block"></div>
-            <div class="header__social-block"></div>
+          <div class="head__social-blocks">
+            <a href="#"><div class="head__social-block whatsapp"></div></a>
+            <a href="#"><div class="head__social-block viber"></div></a>
+            <a href="#"><div class="head__social-block telegram"></div></a>
           </div>
         </header>
         <div class="text-information">
           <div class="text-information__sidebar">
             <ul class="sidebar">
-              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p class="sidebar__our-works-button sidebar-button">Наши работы</p></li>
-              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p class="sidebar__prices-button sidebar-button">Цены</p></li>
-              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><p class="sidebar__map-button sidebar-button">Карта проезда</p></li>
+              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><a href="#" class="sidebar__our-works-button sidebar-button">Наши работы</a></li>
+              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><a href="#" class="sidebar__prices-button sidebar-button">Цены</a></li>
+              <li class="sidebar__item"><div class="sidebar__yellow-line"></div><a href="#" class="sidebar__map-button sidebar-button">Карта проезда</a></li>
             </ul>
           </div>
           <div class="text-information__main">
@@ -57,7 +57,7 @@
             <div class="text-information__consultation">
               <p class="text-information__white-little-title">Устали от обыденности и однообразия?</p>
               <p class="text-information__white-regular-text">Предлагаем Вам лучшие решения для экстерьера Вашего дома и участка.</p>
-              <div class="text-information__consultation-button consultation-button">Получить консультацию</div>
+              <button class="text-information__consultation-button consultation-button">Получить консультацию</button>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@
               <img src="./img/benefits/benefit3.svg" alt="benefit3" class="benefits__benefit-img">
               <p class="benefits__benefit-text">Не боиться прямых солнечных лучей и не выветривается</p>
             </div>
-            <div class="benefits__call">Перезвоните мне</div>
+            <button class="benefits__call consultation-button">Перезвоните мне</button>
           </div>
         </div>
       </div>
@@ -205,20 +205,20 @@
       </div>
       <div class="consultation-block__consultation-button-block">
         <div class="consultation-block__consultation-button-block-shaddow">
-          <div class="consultation-block__consultation-button consultation-button">Получить консультацию</div>
+          <button class="consultation-block__consultation-button consultation-button">Получить консультацию</button>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer__map-block">
-        <div style="position:relative;overflow:hidden;" class="footer__map">
+    <footer class="foot">
+      <div class="foot__map-block">
+        <div style="position:relative;overflow:hidden;" class="foot__map">
           <a href="https://yandex.by/maps/154/vitebsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Витебск</a>
           <a href="https://yandex.by/maps/154/vitebsk/?ll=30.202878%2C55.184217&pt=30.202878%2C55.184217&source=entity_search&utm_medium=mapframe&utm_source=maps&z=11" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — транспорт, навигация, поиск мест</a>
           <iframe src="https://yandex.by/map-widget/v1/-/CCUufFW9sD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
         </div>
       </div>
       <div class="container">
-        <div class="footer__contacts contacts">
+        <div class="foot__contacts contacts">
           <p class="contacts__title">Контакты</p>
           <div class="contacts__phones-block">
             <div class="contacts__phones">
@@ -226,26 +226,32 @@
               <a href="tel:+375292945346" class="contacts__phone">+375 29 294-53-46</a>
             </div>
             <div class="contacts__phones-button-block">
-              <div class="contacts__phones-button">Перезвоните мне</div>
+              <button class="contacts__phones-button consultation-button">Перезвоните мне</button>
             </div>
           </div>
           <a href="mailto:info@art-beton.by" class="contacts__email">info@art-beton.by</a>          
           <div class="contacts__adress-block">
             <p class="contacts__adress">г. Витебск,<br>ул. Транспортная д. 9А</p>
             <div class="contacts__social-blocks">
-              <div class="contacts__social-block">
-                <img src="./img/social/whatsapp-img-black.svg" alt="whatsapp-img">
-              </div>
-              <div class="contacts__social-block">
-                <img src="./img/social/viber-img-black.svg" alt="viber-img">
-              </div>
-              <div class="contacts__social-block">
-                <img src="./img/social/telegram-img-black.svg" alt="telegram-img">
-              </div>
+              <a href="#">
+                <div class="contacts__social-block">
+                  <img src="./img/social/whatsapp-img-black.svg" alt="whatsapp-img">
+                </div>
+              </a>
+              <a href="#">
+                <div class="contacts__social-block">
+                  <img src="./img/social/viber-img-black.svg" alt="viber-img">
+                </div>
+              </a>
+              <a href="#">
+                <div class="contacts__social-block">
+                  <img src="./img/social/telegram-img-black.svg" alt="telegram-img">
+                </div>
+              </a>
             </div>
           </div>
           <div class="contacts__logo-block">
-            <div class="contacts__logo"><img src="./img/main-logo-down.svg" alt="main-logo-down"></div>
+            <a href="#"><div class="contacts__logo"><img src="./img/main-logo-down.svg" alt="main-logo-down"></div></a>
             <div class="contacts__all-right-reserved">Все права защищены © 2022</div>
           </div>
         </div>
