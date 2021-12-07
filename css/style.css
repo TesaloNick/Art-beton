@@ -168,11 +168,12 @@
               .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar-button {
                 text-decoration: none; }
               .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item .sidebar__yellow-line {
+                display: none;
                 position: absolute;
                 content: '';
                 width: 30px;
                 height: 1px;
-                background-color: #CCCCCC;
+                background-color: #F2BF14;
                 left: 0;
                 top: 11px; }
             .background .start-page-block .start-page .text-information .text-information__sidebar .sidebar .sidebar__item:hover {

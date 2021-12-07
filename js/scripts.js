@@ -50,30 +50,30 @@ function scrollTo(scrollToElement, button) {
 }
 
 ourWorksButton.style.color = '#F2BF14'
-ourWorksButton.previousSibling.style.backgroundColor = '#F2BF14'
+ourWorksButton.previousSibling.style.display = 'block'
 
 window.addEventListener('scroll', () => {
   if (window.pageYOffset+window.innerHeight >= footer.offsetTop) {
     mapButton.style.color = '#F2BF14'
-    mapButton.previousSibling.style.backgroundColor = '#F2BF14'
+    mapButton.previousSibling.style.display = 'block'
     pricesButton.style.color = '#CCCCCC'
-    pricesButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    pricesButton.previousSibling.style.display = 'none'
     ourWorksButton.style.color = '#CCCCCC'
-    ourWorksButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    ourWorksButton.previousSibling.style.display = 'none'
   } else if (window.pageYOffset > 0 && window.pageYOffset+window.innerHeight < footer.offsetTop){
     pricesButton.style.color = '#F2BF14'
-    pricesButton.previousSibling.style.backgroundColor = '#F2BF14'
+    pricesButton.previousSibling.style.display = 'block'
     mapButton.style.color = '#CCCCCC'
-    mapButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    mapButton.previousSibling.style.display = 'none'
     ourWorksButton.style.color = '#CCCCCC'
-    ourWorksButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    ourWorksButton.previousSibling.style.display = 'none'
   } else if (window.pageYOffset === 0){
     ourWorksButton.style.color = '#F2BF14'
-    ourWorksButton.previousSibling.style.backgroundColor = '#F2BF14'
+    ourWorksButton.previousSibling.style.display = 'block'
     mapButton.style.color = '#CCCCCC'
-    mapButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    mapButton.previousSibling.style.display = 'none'
     pricesButton.style.color = '#CCCCCC'
-    pricesButton.previousSibling.style.backgroundColor = '#CCCCCC'
+    pricesButton.previousSibling.style.display = 'none'
   }
 })
 

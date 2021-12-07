@@ -232,11 +232,12 @@ $padding-in-prices-blocks: 30px;
               }
   
               .sidebar__yellow-line{
+                display: none;
                 position: absolute;
                 content: '';
                 width: 30px;
                 height: 1px;
-                background-color: #CCCCCC;
+                background-color: #F2BF14;
                 left: 0;
                 top: 11px;
               }
