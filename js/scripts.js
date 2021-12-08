@@ -37,16 +37,28 @@ const sidebarButtons = document.querySelectorAll('.sidebar-button')
 const ourWorksButton = document.querySelector('.sidebar__our-works-button')
 const pricesButton = document.querySelector('.sidebar__prices-button')
 const mapButton = document.querySelector('.sidebar__map-button')
-const background = document.querySelector('.background')
+const startPageBlock = document.querySelector('.start-page-block')
 const prices = document.querySelector('.prices')
 const footer = document.querySelector('.foot')
 
-function scrollTo(scrollToElement, button) {
-  window.scroll({
-    left: 0,
-    top: scrollToElement.offsetTop,
-    behavior: 'smooth'
-  })
+
+function slowScroll (id) {
+  var offset = 0;
+  if (id === '.start-page-block') {
+    $('html, body').animate ({
+      scrollTop: 0
+    }, 500);
+  } else if (id === '.foot__map-block') {
+    $('html, body').animate ({
+      scrollTop: $(id).offset().top - offset
+    }, 500);
+  } else {
+    $('html, body').animate ({
+      scrollTop: $(id).offset().top - $(window).height() - offset
+    }, 500);
+  }
+  return false;
+
 }
 
 ourWorksButton.style.color = '#F2BF14'
@@ -76,10 +88,6 @@ window.addEventListener('scroll', () => {
     pricesButton.previousSibling.style.display = 'none'
   }
 })
-
-ourWorksButton.addEventListener('click', () => scrollTo(background, ourWorksButton))
-pricesButton.addEventListener('click', () => scrollTo(prices, pricesButton))
-mapButton.addEventListener('click', () => scrollTo(footer, mapButton))
 
 const consultationButtons = document.querySelectorAll('.consultation-button')
 const getHelpBlockBackground = document.querySelector('.get-help__block-background')
