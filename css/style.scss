@@ -312,24 +312,29 @@ $padding-in-prices-blocks: 30px;
       right: 0;
       width: 50vw;
       height: 100%;
+      border: 0px;
 
       .slider-block__slider{
         position: relative;
         margin-bottom: 0;
         width: 100%;
         height: 100%;
+        border: 0px;
 
         .slick-list{
           width: 100%;
           height: 100%;
+          border: 0px;
 
           .slick-track{
             width: 100%;
             height: 100%;
+            border: 0px;
 
             .slick-slide > div{
               width: 100%;
               height: 100%;
+              border: 0px;
             }
           }
         }
@@ -408,14 +413,15 @@ $padding-in-prices-blocks: 30px;
             width: 100%;
             height: 100%;
             z-index: 2;
-            
+            border: 0px;
+ 
             .slider-block__slide-img{
               height: 100%;
               width: 100%;
               -o-object-fit: cover;
               object-fit: cover;
               object-position: center;
-              
+              border: 0px;
             }
           }
 

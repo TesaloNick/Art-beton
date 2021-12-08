@@ -3,8 +3,8 @@ $('.slider-block__slider').slick({
   customPaging: function(slider, i) {
     return '<div class="slider-block__dot"></div>';
   },
-  prevArrow: '<button type="button" class="slider-block__arrow-left"><img src="../img/slider/arrow-left.svg" alt="arrow-left" class="slider-block__arrow-left-img"></button>',
-  nextArrow: '<button type="button" class="slider-block__arrow-right"><img src="../img/slider/arrow-right.svg" alt="arrow-right" class="slider-block__arrow-right-img"></button>',
+  prevArrow: '<button type="button" class="slider-block__arrow-left"><img src="./img/slider/arrow-left.svg" alt="arrow-left" class="slider-block__arrow-left-img"></button>',
+  nextArrow: '<button type="button" class="slider-block__arrow-right"><img src="./img/slider/arrow-right.svg" alt="arrow-right" class="slider-block__arrow-right-img"></button>',
 });
 
 if ($(window).width() <= 1150) {
@@ -65,14 +65,14 @@ ourWorksButton.style.color = '#F2BF14'
 ourWorksButton.previousSibling.style.display = 'block'
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset+window.innerHeight >= footer.offsetTop) {
+  if (window.pageYOffset+window.innerHeight > footer.offsetTop) {
     mapButton.style.color = '#F2BF14'
     mapButton.previousSibling.style.display = 'block'
     pricesButton.style.color = '#CCCCCC'
     pricesButton.previousSibling.style.display = 'none'
     ourWorksButton.style.color = '#CCCCCC'
     ourWorksButton.previousSibling.style.display = 'none'
-  } else if (window.pageYOffset > 0 && window.pageYOffset+window.innerHeight < footer.offsetTop){
+  } else if (window.pageYOffset > 0 && window.pageYOffset + window.innerHeight <= footer.offsetTop){
     pricesButton.style.color = '#F2BF14'
     pricesButton.previousSibling.style.display = 'block'
     mapButton.style.color = '#CCCCCC'
